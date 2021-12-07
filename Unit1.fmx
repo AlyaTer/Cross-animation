@@ -1,0 +1,122 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 635
+  ClientWidth = 884
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Path0: TPath
+    Data.Path = {
+      03000000000000000080A34300006143010000000080A2430080BE4301000000
+      00C025440080F943}
+    Fill.Color = claNull
+    Position.X = -16.000000000000000000
+    Position.Y = 36.000000000000000000
+    Size.Width = 892.000000000000000000
+    Size.Height = 564.000000000000000000
+    Size.PlatformDefault = False
+    object Rectangle1: TRectangle
+      Fill.Color = claLightcoral
+      Position.X = -97.000000000000000000
+      Position.Y = 400.000000000000000000
+      RotationAngle = 15.199999809265140000
+      Size.Width = 1264.000000000000000000
+      Size.Height = 477.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object Path1: TPath
+    Data.Path = {
+      240000000000000037C10444AD86F7420200000087D8014484B4EF4202000000
+      8685FF43B2DAD64202000000113C0044E8A6C142020000008F8800444648B442
+      0200000050D60644073D4642020000003F630744761B4B42020000003F910744
+      47B24C4202000000922A09449E8A724202000000DDF00A448D9A8F4202000000
+      97C80D44F960B34202000000D92A0E44BB0CBA4202000000D92A0E44A4AEC742
+      02000000D92A0E448A50E342020000009D130B44DFF2F94202000000935D0744
+      437EF94202000000574806443B5CF94202000000941B05449D79F84202000000
+      38C10444AD86F7420100000038C10444AD86F7420300000037C10444AD86F742
+      000000004FAB0744C3A0E94202000000F5C30744F10CE64202000000618A0744
+      4E4EE44202000000A9FB06444E4EE4420200000065B605444E4EE44202000000
+      33F30344B5CAD84202000000658E034441EBCD4202000000DD2203441252C242
+      02000000C1050244F1F0C04202000000A4DB0144CAD0CB4202000000818A0144
+      44C4E042020000009E2207443C77FD42020000004FAB0744C4A0E94201000000
+      4FAB0744C4A0E942030000004FAB0744C3A0E942}
+    Fill.Color = claAquamarine
+    Position.X = 50.000000000000000000
+    Position.Y = 50.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    object PathAnimation1: TPathAnimation
+      Duration = 4.000000000000000000
+      Interpolation = Quartic
+      OnFinish = PathAnimation1Finish
+      Path.Path = {
+        070000000000000036D98643BAE852430200000036D98643BAE8524302000000
+        5D748743D145A74302000000C9268743D145A743020000005C748743D145A743
+        020000002EBA1844840FE2430200000064931844840FE243}
+      Rotate = True
+      Trigger = 'none'
+    end
+    object FloatAnimation1: TFloatAnimation
+      Delay = 2.000000000000000000
+      Duration = 2.000000000000000000
+      PropertyName = 'Opacity'
+      StartValue = 1.000000000000000000
+      StopValue = 0.000000000000000000
+    end
+    object FloatAnimation2: TFloatAnimation
+      Delay = 2.000000000000000000
+      Duration = 2.000000000000000000
+      PropertyName = 'Size.Height'
+      StartValue = 73.000000000000000000
+      StopValue = 40.000000000000000000
+    end
+    object FloatAnimation3: TFloatAnimation
+      Delay = 2.000000000000000000
+      Duration = 2.000000000000000000
+      PropertyName = 'Size.Width'
+      StartValue = 57.000000000000000000
+      StopValue = 25.000000000000000000
+    end
+  end
+  object Button1: TButton
+    Position.X = 480.000000000000000000
+    Position.Y = 101.000000000000000000
+    TabOrder = 2
+    Text = 'Change'
+    OnClick = Button1Click
+  end
+  object TrackBar1: TTrackBar
+    CanParentFocus = True
+    Orientation = Horizontal
+    Position.X = 392.000000000000000000
+    Position.Y = 64.000000000000000000
+    TabOrder = 4
+    OnChange = TrackBar1Change
+  end
+  object TrackBar2: TTrackBar
+    CanParentFocus = True
+    Max = 10.000000000000000000
+    Orientation = Horizontal
+    Position.X = 528.000000000000000000
+    Position.Y = 64.000000000000000000
+    TabOrder = 3
+    OnChange = TrackBar1Change
+  end
+  object Label1: TLabel
+    Position.X = 392.000000000000000000
+    Position.Y = 39.000000000000000000
+    Text = 'Width and Height'
+    TabOrder = 6
+  end
+  object Label2: TLabel
+    Position.X = 528.000000000000000000
+    Position.Y = 39.000000000000000000
+    Text = 'Speed'
+    TabOrder = 5
+  end
+end
